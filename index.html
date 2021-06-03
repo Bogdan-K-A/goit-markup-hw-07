@@ -58,70 +58,71 @@
     </div>
   </header>
 
-  <!--Main Содержит 3 секции "Особенности" "Галерею" "Карточки команды"-->
+  <!-- -------------------------------- Main --------------------------------- -->
   <main>
-
+    <!-- -------------------------------- Герой -------------------------------- -->
     <section class="hero">
       <div class="container">
 
-        <h1 class="hero-title">
-          Эффективные решения для вашего бизнеса
-        </h1>
+        <h1 class="hero__title-text hero__title--position">Эффективные решения для вашего бизнеса</h1>
 
-        <button class="btn" type="button" data-modal-open>Заказать услугу</button>
+        <button class="btn btn__text" type="button" data-modal-open>Заказать услугу</button>
       </div>
     </section>
 
-    <!--Особенности компании, краткое описание-->
+    <!-- ------------------------ Особенности компании ------------------------- -->
     <section class="section">
       <div class="container">
         <h2 class="visually-hidden">Возможности компании</h2>
 
-        <ul class="description">
-          <li class="description-item">
-            <div class="features-icon">
+        <ul class="description__list">
+          <li class="description__item">
+            <div class="description__icon">
               <svg width="70" height="70">
                 <use href="./img/icons/sprite.svg#antenna"></use>
               </svg>
             </div>
-            <h3 class="title">Внимание к деталям</h3>
-            <p class="text">
+            <h3 class="description__title">Внимание к деталям</h3>
+            <p class="description__text">
               Идейные соображения, а также начало повседневной
               работы по формированию позиции.
             </p>
           </li>
-          <li class="description-item">
-            <div class="features-icon">
+
+          <li class="description__item">
+            <div class="description__icon">
               <svg width="70" height="70">
                 <use href="./img/icons/sprite.svg#clock"></use>
               </svg>
             </div>
-            <h3 class="title">Пунктуальность</h3>
-            <p class="text">
+            <h3 class="description__title">Пунктуальность</h3>
+            <p class="description__text">
               Задача организации, в особенности же рамки и
               место обучения кадров влечет за собой.
             </p>
           </li>
-          <li class="description-item">
-            <div class="features-icon">
+
+          <li class="description__item">
+            <div class="description__icon">
               <svg width="70" height="70">
                 <use href="./img/icons/sprite.svg#diagram"></use>
               </svg>
             </div>
-            <h3 class="title">Планирование</h3>
-            <p class="text">
+            <h3 class="description__title">Планирование</h3>
+            <p class="description__text">
               Равным образом консультация с широким активом в
               значительной степени обуславливает.
             </p>
           </li>
-          <li class="description-item">
-            <div class="features-icon">
+
+          <li class="description__item">
+            <div class="description__icon">
               <svg width="70" height="70">
                 <use href="./img/icons/sprite.svg#astronaut"></use>
               </svg>
             </div>
-            <h3 class="title">Современные технологии</h3>
-            <p class="text">
+            <h3 class="description__title">Современные технологии</h3>
+            <p class="description__text">
               Значимость этих проблем настолько очевидна, что
               реализация плановых заданий.
             </p>
@@ -134,21 +135,23 @@
     <!-- -------------------------- Чем мы занимаемся -------------------------- -->
     <section class="section galeri">
       <div class="container">
-        <h2 class="section-title">Чем мы занимаемся</h2>
-        <ul class="galeri-container">
-          <li class="galeri-item">
+
+        <h2 class="galeri__title">Чем мы занимаемся</h2>
+
+        <ul class="galeri__list">
+          <li class="galeri__item">
             <img src="img/content/img1-370x294.jpg" alt="Man typing on the keyboard" width="370" height="294" />
-            <p>Десктопные приложения</p>
+            <p class="galeri__text galeri__text--position">Десктопные приложения</p>
           </li>
-          <li class="galeri-item">
+          <li class="galeri__item">
             <img src="img/content/img2-370x294.jpg" alt="Man sits in front of a laptop with a phone in his hand"
               width="370" height="294" />
-            <p>Мобильные приложения</p>
+            <p class="galeri__text galeri__text--position">Мобильные приложения</p>
           </li>
-          <li class="galeri-item">
+          <li class="galeri__item">
             <img src="img/content/img3-370x294.jpg" alt="A person has a tablet and a stylus in his hands" width="370"
               height="294" />
-            <p>Дизайнерские решения</p>
+            <p class="galeri__text galeri__text--position">Дизайнерские решения</p>
           </li>
         </ul>
       </div>
@@ -157,13 +160,16 @@
     <!-- ------------------------------- Команда ------------------------------- -->
     <section class="section team">
       <div class="container">
-        <h2 class="section-title">Наша команда</h2>
-        <ul class="team-container">
-          <li class="team-item">
-            <img class="team-img" src="img/team/igor-270x260.jpg" alt="Игорь Демьяненко" width="270" height="260" />
-            <div class="team-content">
-              <h3 class="cards-title">Игорь Демьяненко</h3>
-              <p class="cards-text">Product Designer</p>
+
+        <h2 class="team__title">Наша команда</h2>
+
+        <ul class="cards__list">
+          <li class="cards__item cards__item--position">
+            <img src="img/team/igor-270x260.jpg" alt="Игорь Демьяненко" width="270" height="260" />
+            <div class="cards__content">
+              <h3 class="cards__title">Игорь Демьяненко</h3>
+              <p class="cards__text">Product Designer</p>
+
               <ul class="social">
                 <li>
                   <a class="link-icon" href="">
@@ -172,6 +178,7 @@
                     </svg>
                   </a>
                 </li>
+
                 <li>
                   <a class="link-icon" href="">
                     <svg class="social-icon" width="20px" height="20px">
@@ -196,48 +203,12 @@
               </ul>
             </div>
           </li>
-          <li class="team-item">
-            <img class="team-img" src="img/team/olga-270x260.jpg" alt="Ольга Репина" width="270" height="260" />
-            <div class="team-content">
-              <h3 class="cards-title">Ольга Репина</h3>
-              <p class="cards-text">Frontend Developer</p>
-              <ul class="social">
-                <li>
-                  <a class="link-icon" href="">
-                    <svg class="social-icon" width="20" height="20">
-                      <use href="./img/icons/sprite.svg#instagram"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li>
-                  <a class="link-icon" href="">
-                    <svg class="social-icon" width="20" height="20">
-                      <use href="./img/icons/sprite.svg#twitter"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li>
-                  <a class="link-icon" href="">
-                    <svg class="social-icon" width="20" height="20">
-                      <use href="./img/icons/sprite.svg#facebook"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li>
-                  <a class="link-icon" href="">
-                    <svg class="social-icon" width="20" height="20">
-                      <use href="./img/icons/sprite.svg#linkedin"></use>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </li>
-          <li class="team-item">
-            <img class="team-img" src="img/team/nikolai-270x260.jpg" alt="Николай Тарасов" width="270" height="260" />
-            <div class="team-content">
-              <h3 class="cards-title">Николай Тарасов</h3>
-              <p class="cards-text">Marketing</p>
+          <li class="cards__item cards__item--position">
+            <img src="img/team/olga-270x260.jpg" alt="Ольга Репина" width="270" height="260" />
+            <div class="cards__content">
+              <h3 class="cards__title">Ольга Репина</h3>
+              <p class="cards__text">Frontend Developer</p>
+
               <ul class="social">
                 <li>
                   <a class="link-icon" href="">
@@ -270,11 +241,50 @@
               </ul>
             </div>
           </li>
-          <li class="team-item">
-            <img class="team-img" src="img/team/mihail-270x260.jpg" alt="Михаил Ермаков" width="270" height="260" />
-            <div class="team-content">
-              <h3 class="cards-title">Михаил Ермаков</h3>
-              <p class="cards-text">UI Designer</p>
+          <li class="cards__item cards__item--position">
+            <img src="img/team/nikolai-270x260.jpg" alt="Николай Тарасов" width="270" height="260" />
+            <div class="cards__content">
+              <h3 class="cards__title">Николай Тарасов</h3>
+              <p class="cards__text">Marketing</p>
+
+              <ul class="social">
+                <li>
+                  <a class="link-icon" href="">
+                    <svg class="social-icon" width="20" height="20">
+                      <use href="./img/icons/sprite.svg#instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a class="link-icon" href="">
+                    <svg class="social-icon" width="20" height="20">
+                      <use href="./img/icons/sprite.svg#twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a class="link-icon" href="">
+                    <svg class="social-icon" width="20" height="20">
+                      <use href="./img/icons/sprite.svg#facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a class="link-icon" href="">
+                    <svg class="social-icon" width="20" height="20">
+                      <use href="./img/icons/sprite.svg#linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="cards__item cards__item--position">
+            <img src="img/team/mihail-270x260.jpg" alt="Михаил Ермаков" width="270" height="260" />
+            <div class="cards__content">
+              <h3 class="cards__title">Михаил Ермаков</h3>
+              <p class="cards__text">UI Designer</p>
+
               <ul class="social">
                 <li>
                   <a class="link-icon" href="">
@@ -480,7 +490,7 @@
               договора</a></span>
         </label>
         <div class="modal-btn-posicion">
-          <button class="btn" type="submit">Отправить</button>
+          <button class="btn btn__text" type="submit">Отправить</button>
         </div>
       </form>
     </div>
