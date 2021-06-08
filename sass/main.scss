@@ -1,9 +1,14 @@
-@import "./base/modern-normalize";
+// utils
+@import "./utils/visually-hidden";
 @import "./utils/variables";
+
+// Base
+@import "./base/modern-normalize";
 @import "./base/body";
 @import "./base/section";
 @import "./base/container";
-@import "./base/visually-hidden";
+
+// Components
 @import "./components/header";
 @import "./components/logo";
 @import "./components/navigation";
